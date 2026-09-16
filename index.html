@@ -164,11 +164,11 @@
       overflow:hidden;
     }
     .page.left{
-      padding:38px 54px;
+      padding:40px 56px 44px 56px;
       box-shadow:inset -18px 0 24px rgba(74,54,28,.05);
     }
     .page.right{
-      padding:30px 44px 44px 58px;
+      padding:40px 56px 44px 56px;
       box-shadow:inset 18px 0 24px rgba(74,54,28,.05);
       display:flex;
       flex-direction:column;
@@ -181,12 +181,12 @@
       letter-spacing:.15em;
       color:#9b978d;
     }
-    .page.left .page-number{left:34px}
-    .page.right .page-number{right:34px}
+    .page.left .page-number{left:38px}
+    .page.right .page-number{right:38px}
 
     .page-author{
       position:absolute;
-      right:34px;
+      right:38px;
       bottom:18px;
       font-family:Arial,Helvetica,sans-serif;
       font-size:12px;
@@ -229,6 +229,20 @@
       z-index:-1;
     }
 
+
+    .text-column{
+      width:min(100%, 470px);
+      margin-right:auto;
+    }
+    .intro-wrap{
+      width:min(100%, 470px);
+      margin-right:auto;
+      display:flex;
+      flex-direction:column;
+      min-height:0;
+      flex:1 1 auto;
+    }
+
     .opening-left{
       height:100%;
       display:grid;
@@ -266,6 +280,8 @@
       letter-spacing:.20em;
       text-transform:uppercase;
       color:var(--blue);
+      width:min(100%, 470px);
+      margin-right:auto;
     }
     .chapter-title{
       margin:0 0 12px;
@@ -274,6 +290,8 @@
       font-weight:400;
       line-height:1;
       color:var(--blue-deep);
+      width:min(100%, 470px);
+      margin-right:auto;
     }
     .intro{
       flex:1 1 auto;
@@ -282,7 +300,9 @@
       color:#28313f;
       font-size:14px;
       line-height:1.38;
-      padding-right:2px;
+      padding-right:0;
+      width:min(100%, 470px);
+      margin-right:auto;
     }
     .intro p{margin:0 0 7px}
     .intro .final-line{
@@ -295,6 +315,8 @@
 
     .chapter2-left{
       height:100%;
+      width:min(100%, 470px);
+      margin:0 auto;
       display:flex;
       flex-direction:column;
       justify-content:center;
@@ -348,7 +370,9 @@
       color:#28313f;
       font-size:14.4px;
       line-height:1.38;
-      padding-right:2px;
+      padding-right:0;
+      width:min(100%, 470px);
+      margin-right:auto;
     }
     .chapter2-text p{margin:0 0 7px}
     .chapter2-ending{
@@ -360,6 +384,8 @@
 
     .chapter-intro{
       height:100%;
+      width:min(100%, 470px);
+      margin:0 auto;
       display:flex;
       flex-direction:column;
       justify-content:center;
@@ -395,7 +421,9 @@
       color:#28313f;
       font-size:14.4px;
       line-height:1.38;
-      padding-right:2px;
+      padding-right:0;
+      width:min(100%, 470px);
+      margin-right:auto;
     }
     .body-text p{margin:0 0 7px}
     .body-text .ending{
@@ -512,7 +540,7 @@
 </head>
 <body>
   <main class="app">
-    <p class="eyebrow">Проект книги • литературная версия 13</p>
+    <p class="eyebrow">Проект книги • литературная версия 14</p>
 
     <section class="book-shell" aria-label="Визуальный макет книги о Милане">
       <div class="book">
@@ -751,7 +779,7 @@
       <button class="primary" id="nextBtn" type="button">Открыть книгу →</button>
     </div>
 
-    <p class="hint">Версия 13: добавлена третья глава. Размер основного текста сохранён таким же, как в первой и второй главах; длинный текст переносится на следующий разворот.</p>
+    <p class="hint">Версия 14: выровнены внутренние поля и рабочая ширина текста по всей книге. Интервалы по бокам, сверху и снизу стали более едиными — по образцу разворота 01–02.</p>
   </main>
 
   <script>
